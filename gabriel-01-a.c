@@ -16,7 +16,7 @@ int main()
 {
     char nome[256];
     printf("Digite seu nome: ");
-    scanf("%[0-9a-zA-Z ]",nome);
+    scanf("%[0-9a-zA-Z ]",&nome);
     int tamanho = strlen(nome);
     char line[100] = "";
     for (int i = 0; i < (tamanho + 2); i++)
