@@ -12,6 +12,12 @@
 #include <stdio.h>
 #include <math.h>
 
+/**
+ * Menu
+ * 
+ * print a menu of choices and return the chosen letter
+ * 
+ */
 char menu()
 {
     char letter;
@@ -27,12 +33,24 @@ char menu()
     return letter;
 }
 
+/**
+ * AreaTrapezio
+ * 
+ * calculate the trapeze with minor base (a), larger base (b), and height (c)
+ * 
+ */
 void areaTrapezio(int a, int b, int c)
 {
     float area = ((a + b) * c) / 2.00;
     printf("A area do trapezio de bases %d e %d, com altura %d eh: %.2f", a, b, c, area);
 }
 
+/**
+ * Pitagoras
+ * 
+ * apply the pitagoras formula in a, b and c
+ * 
+*/
 void pitagoras(int a, int b, int c)
 {
     float delta = sqrt(pow(b, 2) - 4 * a * c);
@@ -48,12 +66,23 @@ void pitagoras(int a, int b, int c)
     }
 }
 
+/**
+ * MediaGeometrica
+ * 
+ * Do the geometric media of a, b and c
+ * */
 void mediaGeometrica(int a, int b, int c)
 {
     float media = cbrt(a * b * c);
     printf("A media geometrica dos valores [%d, %d, %d] eh: %.2f", a, b, c, media);
 }
 
+/**
+ * SomaIntervalo
+ * 
+ * Sum the interval of a to b with a c variantion
+ * 
+ * */
 void somaIntervalo(int a, int b, int c)
 {
     int sum = 0;
@@ -67,7 +96,7 @@ void somaIntervalo(int a, int b, int c)
 /**
  * Main method
  * 
- * 
+ * Request the method ["a","b","c","d"] and execute
  * 
  * @return int 
 */
