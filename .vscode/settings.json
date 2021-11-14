@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "stdio.h": "c"
+        "winuser.h": "c",
+        "conio2.h": "c",
+        "limits": "c"
     }
 }
