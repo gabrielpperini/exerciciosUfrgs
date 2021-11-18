@@ -63,7 +63,7 @@ int encrypt(char name[TAM], int key)
 {
     FILE *arquivo = fopen(name, "r");
     if (arquivo)
-    {
+    { 
         FILE *saida = fopen("SAIDA.txt", "w");
         char c;
         while ((c = fgetc(arquivo)) != EOF)
